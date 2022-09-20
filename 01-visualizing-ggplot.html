@@ -266,7 +266,7 @@
       </div>
       <hr></nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Data visualization with ggplot2</h1>
-        <p> Last updated on 2022-09-13 | <a href="https://github.com/MCMaurer/Rewrite-R-ecology-lesson/edit/main/episodes/01-visualizing-ggplot.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
+        <p> Last updated on 2022-09-20 | <a href="https://github.com/MCMaurer/Rewrite-R-ecology-lesson/edit/main/episodes/01-visualizing-ggplot.Rmd" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
         <div class="text-end">
           <button role="button" aria-pressed="false" tabindex="0" id="expand-code" class="pull-right"> Expand All Solutions <i aria-hidden="true" data-feather="plus"></i></button>
         </div>
@@ -311,7 +311,7 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout1"></a>
 </h3>
 <div class="callout-content">
 <p>If you do not have <code>ggplot2</code> installed, you can run <code>install.packages("ggplot2")</code> in the <strong>console</strong>.</p>
@@ -377,7 +377,7 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout2"></a>
 </h3>
 <div class="callout-content">
 <p>Some languages, like Python, require certain spacing or indentation for code to run properly. This isn’t the case in R, so if you see spaces or indentation in the code from this lesson, it is to improve readability.</p>
@@ -424,7 +424,7 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout3"></a>
 </h3>
 <div class="callout-content">
 <p><strong>Warning</strong> messages are one of a few ways R will communicate with you. Warnings can be thought of as a “heads up”. Nothing necessarily went <em>wrong</em>, but the author of that function wanted to draw your attention to something. In the above case, it’s worth knowing that some of the rows of your data were not plotted because they had missing data.</p>
@@ -468,7 +468,7 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout4"></a>
 </h3>
 <div class="callout-content">
 <p>Two common issues you might run into when working in R are forgetting a closing bracket or a closing quote. Let’s take a look at what each one does.</p>
@@ -514,7 +514,7 @@
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-1-modifying-plots" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Modifying plots<a class="anchor" aria-label="anchor" href="#challenge-1-modifying-plots"></a>
+<h3 class="callout-title">Challenge 1: Modifying plots<a class="anchor" aria-label="anchor" href="#challenge1"></a>
 </h3>
 <div class="callout-content">
 <ol style="list-style-type: decimal"><li>Try modifying the plot so that the <code>shape</code> of the point varies by <code>sex</code>. You will set the <code>shape</code> the same way you set the <code>color</code>.</li>
@@ -548,7 +548,7 @@
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-1-modifying-plots" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Modifying plots<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge-1-modifying-plots"></a>
+<h3 class="callout-title">Challenge 1: Modifying plots<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge2"></a>
 </h3>
 <div class="callout-content">
 <ol start="2" style="list-style-type: decimal"><li>Now try changing the plot so that the <code>color</code> of the points vary by <code>year</code>. Do you notice a difference in the color scale compared to changing color by plot type? Why do you think this happened?</li>
@@ -642,7 +642,7 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout5"></a>
 </h3>
 <div class="callout-content">
 <p>One thing you may notice is that the axis labels are overlapping each other, depending on how wide your plot viewer is. One way to help make them more legible is to <strong>wrap</strong> the text. We can do that by modifying the <strong>labels</strong> for the <code>x</code> axis <code>scale</code>.</p>
@@ -731,7 +731,7 @@
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-2-change-geoms" class="callout-inner">
-<h3 class="callout-title">Challenge 2: Change <code>geom</code>s<a class="anchor" aria-label="anchor" href="#challenge-2-change-geoms"></a>
+<h3 class="callout-title">Challenge 2: Change <code>geom</code>s<a class="anchor" aria-label="anchor" href="#challenge3"></a>
 </h3>
 <div class="callout-content">
 <p>Violin plots are similar to boxplots- try making one using <code>plot_type</code> and <code>hindfoot_length</code> as the x and y variables. Remember that all geom functions start with <code>geom_</code>, followed by the type of geom.</p>
@@ -768,7 +768,7 @@
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-2-change-geoms" class="callout-inner">
-<h3 class="callout-title">Challenge 2: Change <code>geom</code>s<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge-2-change-geoms"></a>
+<h3 class="callout-title">Challenge 2: Change <code>geom</code>s<em> (continued)</em><a class="anchor" aria-label="anchor" href="#challenge4"></a>
 </h3>
 <div class="callout-content">
 <p>For an <em>extra challenge</em>, , make the color of the points and outlines of the violins vary by <code>plot_type</code>, and set the fill of the violins to white. Try playing with the order of the layers to see what looks best.</p>
@@ -866,7 +866,7 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout6"></a>
 </h3>
 <div class="callout-content">
 <p>Because there are so many possible arguments to the <code>theme()</code> function, it can sometimes be hard to find the right one. Here are some tips for figuring out how to modify a plot element:</p>
@@ -908,7 +908,7 @@
 <i class="callout-icon" data-feather="zap"></i>
 </div>
 <div id="challenge-3-customizing-a-plot" class="callout-inner">
-<h3 class="callout-title">Challenge 3: Customizing a plot<a class="anchor" aria-label="anchor" href="#challenge-3-customizing-a-plot"></a>
+<h3 class="callout-title">Challenge 3: Customizing a plot<a class="anchor" aria-label="anchor" href="#challenge5"></a>
 </h3>
 <div class="callout-content">
 <p>Modify the previous plot by adding a descriptive subtitle. Increase the font size of the plot title and make it bold.</p>
@@ -967,7 +967,7 @@
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Callout<a class="anchor" aria-label="anchor" href="#callout7"></a>
 </h3>
 <div class="callout-content">
 <p>Faceting comes in handy in many scenarios. It can be useful when:</p>
@@ -1009,7 +1009,7 @@
 <i class="callout-icon" data-feather="message-circle"></i>
 </div>
 <div id="challenge-4-make-your-own-plot" class="callout-inner">
-<h3 class="callout-title">Challenge 4: Make your own plot<a class="anchor" aria-label="anchor" href="#challenge-4-make-your-own-plot"></a>
+<h3 class="callout-title">Challenge 4: Make your own plot<a class="anchor" aria-label="anchor" href="#discussion1"></a>
 </h3>
 <div class="callout-content">
 <p>Try making your own plot! You can run <code>str(complete_old)</code> or <code>?complete_old</code> to explore variables you might use in your new plot. Feel free to use variables we have already seen, or some we haven’t explored yet.</p>
@@ -1027,7 +1027,7 @@
 <i class="callout-icon" data-feather="key"></i>
 </div>
 <div class="callout-inner">
-<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#NA"></a>
+<h3 class="callout-title">Keypoints<a class="anchor" aria-label="anchor" href="#keypoints1"></a>
 </h3>
 <div class="callout-content">
 <ul><li>the <code>ggplot()</code> function initiates a plot, and <code>geom_</code> functions add representations of your data</li>
@@ -1062,8 +1062,8 @@
         <p>Materials licensed under <a href="LICENSE.html">CC-BY 4.0</a> by the authors</p>
         
         <p><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="external-link">Template licensed under CC-BY 4.0</a> by <a href="https://carpentries.org" class="external-link">The Carpentries</a></p>
-        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.9.5" class="external-link">sandpaper (0.9.5)</a>,
-        <a href="https://github.com/carpentries/pegboard/tree/0.3.1" class="external-link">pegboard (0.3.1)</a>,
+        <p>Built with <a href="https://github.com/carpentries/sandpaper/tree/0.10.0" class="external-link">sandpaper (0.10.0)</a>,
+        <a href="https://github.com/carpentries/pegboard/tree/0.3.2" class="external-link">pegboard (0.3.2)</a>,
       and <a href="https://github.com/carpentries/varnish/tree/0.2.4" class="external-link">varnish (0.2.4)</a>.</p>
 			</div>
 		</footer></div> <!-- / div.container -->
@@ -1085,8 +1085,8 @@
   "url": "https://MCMaurer.github.io/Rewrite-R-ecology-lesson/01-visualizing-ggplot.html",
   "identifier": "https://MCMaurer.github.io/Rewrite-R-ecology-lesson/01-visualizing-ggplot.html",
   "dateCreated": "2022-09-08",
-  "dateModified": "2022-09-13",
-  "datePublished": "2022-09-13"
+  "dateModified": "2022-09-20",
+  "datePublished": "2022-09-20"
 }
 
   </script><script>
